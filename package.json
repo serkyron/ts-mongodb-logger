@@ -1,0 +1,42 @@
+{
+  "name": "ts-mongodb-logger",
+  "version": "1.0.0",
+  "description": "MongoDB log channel for ts-composite-logger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serkyron/ts-mongodb-logger.git"
+  },
+  "keywords": [
+    "log",
+    "logger",
+    "mongodb",
+    "channel"
+  ],
+  "author": "serkyron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serkyron/ts-mongodb-logger/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.12",
+    "tslint": "^5.19.0",
+    "typescript": "^3.6.2",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "babel-preset-stage-2": "^6.24.1",
+    "typescript-mix": "^3.1.3"
+  },
+  "homepage": "https://github.com/serkyron/ts-mongodb-logger#readme",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "mongodb": "^3.3.3",
+    "ts-composite-logger": "^1.2.1"
+  }
+}
