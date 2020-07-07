@@ -1,4 +1,3 @@
-import assert from "assert";
 import {MongoClient} from "mongodb";
 import {ILoggerChannel} from "ts-composite-logger";
 import {ILogMessage} from "ts-composite-logger";
@@ -40,10 +39,8 @@ export class MongoDB implements ILoggerChannel {
     public connect(): Promise<ILoggerChannel> {
         return new Promise((resolve, reject) => {
             MongoClient.connect(this.connectUrl, { useNewUrlParser: true }, (err, client) => {
-                try {
-                    assert.strictEqual(null, err);
-                } catch (e) {
-                    return reject(e);
+                if (err) {
+                    return reject(err);
                 }
 
                 this.client = client;

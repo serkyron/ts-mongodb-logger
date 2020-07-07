@@ -35,7 +35,6 @@
   },
   "homepage": "https://github.com/serkyron/ts-mongodb-logger#readme",
   "dependencies": {
-    "assert": "^2.0.0",
     "mongodb": "^3.3.3",
     "ts-composite-logger": "^1.2.1"
   }
